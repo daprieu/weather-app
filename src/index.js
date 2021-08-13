@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import weatherApp from './App';
+import {WeatherApp} from './App';
 import reportWebVitals from './reportWebVitals';
+import { WeatherProvider } from './components/weather/WeatherProvider';
+require('dotenv').config()
 
 ReactDOM.render(
   <React.StrictMode>
-    <weatherApp />
+    <WeatherProvider>
+    <WeatherApp />
+    </WeatherProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
