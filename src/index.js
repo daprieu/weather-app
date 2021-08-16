@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import {WeatherApp} from './App';
 import reportWebVitals from './reportWebVitals';
 import { WeatherProvider } from './components/weather/WeatherProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 require('dotenv').config()
 
 ReactDOM.render(
