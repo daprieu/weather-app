@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
-import {WeatherApp} from './App';
 import reportWebVitals from './reportWebVitals';
-import { WeatherProvider } from './components/weather/WeatherProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { WeatherApp } from './App'
 require('dotenv').config()
 
 ReactDOM.render(
   <React.StrictMode>
-    <WeatherProvider>
-    <WeatherApp />
-    </WeatherProvider>
+    <WeatherApp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
