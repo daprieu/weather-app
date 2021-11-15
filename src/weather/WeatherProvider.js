@@ -7,7 +7,6 @@ export const WeatherProvider = (props) => {
     const [weather, setWeather] = useState({})
     const [weatherD, setWeatherD] = useState()
     const key = process.env.REACT_APP_WEATHER_API_KEY
-    console.log('key: ', key);
     
 
     const getWeather = () => {
